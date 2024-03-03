@@ -1,0 +1,70 @@
+[project]
+name = "miRmap"
+authors = [{name = "Charles E. Vejnar"}]
+description = "Comprehensive prediction of microRNA target repression strength"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = [
+    "dendropy",
+    "ViennaRNA",
+]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://git.sr.ht/~vejnar/miRmap"
+
+[project.scripts]
+mirmap = "mirmap_scripts.mirmap:main"
+
+[build-system]
+requires = ["setuptools>=61", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I001",
+    "I002",
+    # flake8-bugbear
+    "B",
+    # pydocstyle
+    "D"
+]
+ignore = ["D100", "D104", "D200" , "D202", "D205", "D212", "D415", "D416",
+    "E501", "E731", "ANN101", "ANN102", "ANN401", "C408", "PT018"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/{tests,docs}/*" = ["D101", "D102", "D103", "D105"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+[tool.pytest.ini_options]
+addopts = """
+    --color=yes
+"""
+markers = [
+    "unit: marks tests as unit tests",
+    "functional: marks tests as functional tests",
+]
+testpaths = ["tests"]
