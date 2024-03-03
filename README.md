@@ -7,7 +7,7 @@ The *miRmap* library is a Python library predicting the repression strength of m
  - **probabilistic** features: *P.over binomial* and *P.over exact*, and
  - **sequence-based** features: *AU content*, *UTR position* and *3' pairing*.
 
-> **NOTE** This is a re-implementation by the same author of the miRmap library published in 2011 with most of the core algorithm unchanged. Please refer to the [miRmap1](https://git.sr.ht/~vejnar/miRmap1) repository for the old library.
+> **NOTE** This is a reimplementation by the same author of the miRmap library published in 2011 with most of the core algorithm unchanged. Please refer to the [miRmap1](https://git.sr.ht/~vejnar/miRmap1) repository for the old library.
 
 ## Online
 
@@ -19,7 +19,7 @@ See [refs](https://git.sr.ht/~vejnar/miRmap/refs) page.
 
 ## Citation
 
-If you use miRmap in your research, please cite:
+If you use miRmap for your research, please cite:
 
 > Charles E. Vejnar and Evgeny M. Zdobnov<br>
 > miRmap: Comprehensive prediction of microRNA target repression strength<br>
