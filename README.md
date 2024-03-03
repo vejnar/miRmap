@@ -27,9 +27,9 @@ If you use miRmap in your research, please cite:
 
 ### External dependencies
 
-1. The [Spatt](http://www.mi.parisdescartes.fr/~nuel/spatt) library is necessary for the *P.over exact* feature.
+1. The [Spatt](https://nuel.perso.math.cnrs.fr/spatt) library is necessary for the *P.over exact* feature.
 
-    Download the latest [Spatt](http://www.mi.parisdescartes.fr/~nuel/spatt) tarball (Version 2.1 was successfully tested), then do:
+    Download the latest [Spatt](https://nuel.perso.math.cnrs.fr/spatt) tarball (Version 2.1 was successfully tested), then do:
 
     ```bash
     cd spatt-<version>
