@@ -33,6 +33,8 @@ If you use miRmap for your research, please cite:
 
     Download the latest [Spatt](https://nuel.perso.math.cnrs.fr/spatt) tarball (Version 2.1 was successfully tested), then do:
 
+    > **NOTE** If the CNRS link above is down, a mirror of the [source code](https://github.com/vejnar/spatt) and the original tarball [spatt-2.1.tar.gz](https://github.com/vejnar/spatt/raw/refs/heads/main/tar/spatt-2.1.tar.gz) are available.
+
     ```bash
     cd spatt-<version>
     mkdir build
