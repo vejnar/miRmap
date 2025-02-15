@@ -109,4 +109,4 @@ This will return:
 
 The *miRmap* library is distributed under the GNU GPL v3 (see /LICENSE).
 
-Copyright © 2011-2024 Charles E. Vejnar
+Copyright © 2011-2025 Charles E. Vejnar
